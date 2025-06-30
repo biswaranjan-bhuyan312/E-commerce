@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <h3>Choose Payment Mode</h3>
+    <div class="payment-container">
+    <div class="payment-box">
+      <div class="payment-options">
+        <button class="option" onclick="selectPayment('cod')">Cash On Delivery</button>
+        <button class="option" onclick="selectPayment('card')">Credit/Debit Card</button>
+        <button class="option" onclick="selectPayment('upi')">PhonePe/Google</button>
+      </div>
+
+      <div class="payment-details" id="paymentDetails">
+        <h4>Pay On Delivery (Cash/UPI)</h4>
+        <input type="text" placeholder="Enter last 4 digits of mobile for confirmation" />
+        <p>You can pay via Cash or UPI at the time of delivery.</p>
+        <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <h3>PRICE DETAILS (1 items)</h3>
+      <div class="summary-line"><span>Total MRP</span><span id="totalMrp">₹0</span></div>
+      <div class="summary-line"><span>Discount on MRP</span><span class="green" id="discount">− ₹0</span></div>
+      <div class="summary-line"><span>Convenience Fee</span><span class="green">FREE</span></div>
+      <hr />
+      <div class="summary-total"><span>Total Amount</span><span id="finalAmount">₹0</span></div>
+    </div>
+  </div>
+
+
+<script src="payment.js"></script>
+</body>
+</html>

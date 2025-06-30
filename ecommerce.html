@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Shop</title>
+    <link rel="stylesheet" href="./ecommerce.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>Let's Shop</h1>
+            <img src="./shop.webp" alt="Shop Logo">
+        </div>
+        <div class="nav-links">
+            <button class="register">Register</button>
+            <button class="login">Login</button>
+            <div class="bookmark-section">
+                <button id="bookmarkToggle">🔖Wishlist</button>
+                <ul id="bookmarkList" class="hidden"></ul>
+            </div>
+            <div class="cart-section">
+                <button id="cartBtn">🛒My cart</button>
+            </div>
+            <div class="profile-container">
+                <div class="profile-image" id="profileImageContainer">
+                    <p><span id="dropdownName"></span></p>
+                </div>  
+                <!-- <div class="profile-dropdown hidden" id="profileDropdown">
+                    <p><strong>Name:</strong> </p>
+                    <p><strong>Email:</strong> <span id="dropdownEmail"></span></p>
+                    <p><strong>Phone:</strong> <span id="dropdownPhone"></span></p>
+                    <button id="logoutBtn">Logout</button>
+                </div> -->
+            </div>
+            <div class="logout">
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-wrapper">
+        <!-- Signup Form -->
+        <form id="signupForm" class="hidden">
+            <div class="container">
+                <div class="form-content">
+                    <p>User name:</p>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-content">
+                    <p>Email:</p>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-content">
+                    <p>Mobile No:</p>
+                    <input type="number" id="mobileno" name="mobileno" required>
+                </div>
+
+                <div class="form-content">
+                    <p>Password:</p>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-content">
+                    <p>Profile Url:</p>
+                    <input type="text" id="profileUrl" name="profileUrl" required>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit">Sign Up</button>
+                    <p>Already have an account? <a href="#" onclick="toggleForms()">Login here</a></p>
+                </div>
+            </div>
+        </form>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="hidden">
+            <div class="form-content">
+                <p>Email:</p>
+                <input type="email" id="loginEmail" name="email" required>
+            </div>
+
+            <div class="form-content">
+                <p>Password:</p>
+                <input type="password" id="loginPassword" name="password" required>
+            </div>
+
+            <div class="form-footer">
+                <button type="submit">Log in</button>
+                <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign up here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div id="productList" class="product-list">
+       
+    </div>
+
+    <script src="ecommerce.js"></script>
+    
+</body>
+</html>

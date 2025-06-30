@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f1f3f6;
+    padding: 20px;
+}
+
+    .checkout-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: auto;
+      gap: 30px;
+    }
+
+    .delivery-address,
+    .price-summary {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+      height: fit-content;
+    }
+
+    .delivery-address h3,
+    .price-summary h3 {
+      margin-top: 0;
+    }
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.summary-line {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .summary-total {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .checkout-button {
+      background-color: rgb(235, 60, 60);
+      color: white;
+      padding: 12px;
+      width: 100%;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+.add-address-btn {
+  background-color:  #007bff;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-address-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.remove-address-btn {
+  background-color: rgb(235, 60, 60);
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.remove-address-btn:hover {
+  background-color: #c82333;
+}

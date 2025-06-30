@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .container button {
+      background-color: rgb(235, 60, 60);
+      color: white;
+      cursor: pointer;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    .container img {
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="check-mark-1292787_640.webp" alt="Thank You" />
+    <h1>Your order has been placed</h1>
+    <p>Thank you for shopping with us!</p>
+    <button class="btn">Shop more</button>
+  </div>
+
+  <script>
+    document.querySelector(".btn").addEventListener("click", function() {
+      window.location.href = "ecommerce.html";  // Change to your home/product page
+    });
+  </script>
+
+</body>
+</html>

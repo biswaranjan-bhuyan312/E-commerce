@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="address.css"> 
+</head>
+<body>
+
+    <div class="address-container">
+    <form class="address-form" id="addressForm">
+      <h3>CONTACT DETAILS</h3>
+      <input type="text" id="name" placeholder="Name*" required />
+      <input type="text" id="mobile" placeholder="Mobile No*" required />
+
+      <h3>ADDRESS</h3>
+      <input type="text" id="pincode" placeholder="Pin Code*" required />
+      <input type="text" id="address" placeholder="Address*" required />
+      <input type="text" id="town" placeholder="Locality / Town*" required />
+      <div class="half">
+        <input type="text" id="city" placeholder="City/District*" required />
+        <input type="text" id="state" placeholder="State*" required />
+      </div>
+      <button type="submit">ADD ADDRESS</button>
+    </form>
+
+    <div class="price-summary">
+      <h3>PRICE DETAILS</h3>
+      <div class="summary-line"><span>Total MRP</span> <span id="totalMrp">₹0</span></div>
+      <div class="summary-line"><span>Discount on MRP</span> <span class="green" id="discount">− ₹0</span></div>
+      <div class="summary-line"><span>Convenience Fee</span> <span class="green">FREE</span></div>
+      <hr />
+      <div class="summary-total"><span>Total Amount</span><span id="finalAmount">₹0</span></div>
+    </div>
+  </div>
+    
+<script src="address.js"></script>
+</body>
+</html>

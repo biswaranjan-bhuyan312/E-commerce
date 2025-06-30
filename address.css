@@ -1,0 +1,75 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f1f3f6;
+      padding: 20px;
+    }
+
+    .address-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: auto;
+      gap: 30px;
+    }
+
+    .address-form {
+      background: white;
+      padding: 20px;
+      flex: 1;
+      border-radius: 8px;
+    }
+
+    .address-form h3 {
+      margin-top: 0;
+    }
+
+    .address-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .address-form .half {
+      display: flex;
+      gap: 10px;
+    }
+
+    .address-form button {
+      background-color: rgb(235, 60, 60);
+      color: white;
+      padding: 12px;
+      width: 100%;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .price-summary {
+      background: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 8px;
+      height: fit-content;
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .summary-total {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .green {
+      color: green;
+    }

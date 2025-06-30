@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <div class="cart-container">
+    <div class="cart-items" id="cartItemsContainer">
+      <!-- JS will populate cart items here -->
+    </div>
+
+    <div class="price-summary">
+      <h3>PRICE DETAILS</h3>
+      <div class="summary-line"><span>Price (<span id="itemCount"></span> items)</span><span id="totalPrice">₹0</span></div>
+      <div class="summary-line"><span>Discount</span><span class="green">−2%</span></div>
+      <div class="summary-line"><span>Platform Fee</span><span>₹4</span></div>
+      <hr />
+      <div class="summary-total"><strong>Total Amount</strong><strong id="totalAmount">₹0</strong></div>
+      <button class="place-order">PLACE ORDER</button>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
